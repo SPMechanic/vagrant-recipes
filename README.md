@@ -1,4 +1,4 @@
-Vagrant Recipes
+![Vagrant Recipes](https://raw.github.com/rohitghatol/vagrant-recipes/master/images/vagrant-recipes.png)
 =======================
 Vagrant is the new required tool for DevOps work, especially from the developer's side. A Developer would typically setup few Virtual Box on his/her machine, mimicing closely a production environment and then do development using them. The Developer would also share the Vagrantfile and underlyving provisioninig configuration e.g Puppet/Chef/Shell Scripts with the DevOps to share as a working document and software how the/she provisioned their machines.
 
