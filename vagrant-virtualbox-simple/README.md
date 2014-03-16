@@ -22,20 +22,20 @@ Commands
 
 Say our vagrant file is located in /user/rohit/vagrant-project
 
-$>cd /user/rohit/vagrant-project
+	$>cd /user/rohit/vagrant-project
 
 Run 'vagrant up' to start the virtual file
 
-$>vagrant up
+	$>vagrant up
 
 Once vagrant up successfully finishes, then ssh into the default virtual machine
 
-$>vagrant ssh
+	$>vagrant ssh
 
 To suspend the virtual machine run
 
-$>vagrant suspend
+	$>vagrant suspend
 
 To destroy the virtual machine altogether
 
-$>vagrant destroy --force
+	$>vagrant destroy --force
