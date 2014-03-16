@@ -39,5 +39,5 @@ Recipes
 3. Provisioning Virtual Box behind Proxy using Vagrant
 -------------------------------------------------------
 
-[Recipe]https://github.com/rohitghatol/vagrant-recipies/tree/master/vagrant-virtualbox-proxy This Recipe describes the steps to make Vagrant working behind Proxy. It also describes how to make your Virtual Machines (e.g Virtual Boxes) work behind Proxy.
+[Recipe](https://github.com/rohitghatol/vagrant-recipies/tree/master/vagrant-virtualbox-proxy) This Recipe describes the steps to make Vagrant working behind Proxy. It also describes how to make your Virtual Machines (e.g Virtual Boxes) work behind Proxy.
 
