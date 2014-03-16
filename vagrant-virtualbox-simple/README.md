@@ -1,6 +1,6 @@
 Vagrant Virtual Box Simple
 ==========================
-This is an example of the simplest kind of Vagrantfile. This file configures a virtual machine named 'default' from a preexisting vagrant box named precise32 located at http://files.vagrantup.com/precise32.box
+This is an example of the simplest kind of Vagrantfile. This file configures a virtual machine named 'default' from a preexisting vagrant box named precise64 located at http://files.vagrantup.com/precise64.box
 
 Vagrantfile
 -----------
@@ -10,9 +10,9 @@ Vagrantfile
 
 		Vagrant.configure(VAGRANTFILE_API_VERSION) do |config
 
-		    config.vm.box = "precise32"
+		    config.vm.box = "precise64"
 
-		    config.vm.box_url = "http://files.vagrantup.com/precise32.box"
+		    config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
 	end
 
