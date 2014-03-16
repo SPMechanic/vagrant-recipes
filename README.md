@@ -30,24 +30,23 @@ Install Vagrant from http://vagrantup.com . Add vagrant/bin to the PATH
 
 
 Recipes
-=========
+--------
 
-1. Provisioning Virtual Box using Vagrant
-------------------------------------------
+### 1. Provisioning Virtual Box using Vagrant
 
 [See the Recipe](https://github.com/rohitghatol/vagrant-recipies/tree/master/vagrant-virtualbox-simple) 
 
 This Recipe describes the simplest case of setting up a Virtual Box using Vagrant
 
 
-2. Provisioning AWS EC2 using Vagrant
----------------------------------------
+### 2. Provisioning AWS EC2 using Vagrant
+
 [See the Recipe](https://github.com/rohitghatol/vagrant-recipies/tree/master/vagrant-aws-provider) 
 
 This Recipe describes the steps required to Provision Amazon AWS EC2 machine using Vagrant
 
-3. Provisioning Virtual Box behind Proxy using Vagrant
--------------------------------------------------------
+### 3. Provisioning Virtual Box behind Proxy using Vagrant
+
 
 [See the Recipe](https://github.com/rohitghatol/vagrant-recipies/tree/master/vagrant-virtualbox-proxy) 
 
@@ -55,7 +54,7 @@ This Recipe describes the steps to make Vagrant working behind Proxy. It also de
 
 
 References 
-===========
+-----------
 
  * http://www.vagrantup.com/
  * https://github.com/mitchellh/vagrant-aws
