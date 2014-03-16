@@ -53,3 +53,10 @@ This Recipe describes the steps required to Provision Amazon AWS EC2 machine usi
 
 This Recipe describes the steps to make Vagrant working behind Proxy. It also describes how to make your Virtual Machines (e.g Virtual Boxes) work behind Proxy.
 
+
+References 
+===========
+
+ * http://www.vagrantup.com/
+ * https://github.com/mitchellh/vagrant-aws
+ * https://github.com/tmatilai/vagrant-proxyconf
