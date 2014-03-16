@@ -1,7 +1,11 @@
 Vagrant Recipes
 =======================
+Vagrant is the new required tool for DevOps work, especially from the developer's side. A Developer would typically setup few Virtual Box on his/her machine, mimicing closely a production environment and then do development using the. The Developer would also share the Vagrantfile and underlyving provisioninig configuration e.g Puppet/Chef/Shell Scripts with the DevOps to share as a working document and software how the/she provisioned their machines.
 
-This repository holds useful Vagrant Recipes. 
+This way DevOps can replicate the same environment, further refine them and share it back with the dev team.
+
+
+
 
 Installation
 ==============
@@ -9,12 +13,15 @@ Installation
 Prerequistes
 --------------
 
+### SSH - Only for Windows
 Vagrant would work out of box on Unix/Linux based system, but on windows it needs ssh shell.
 The simplest way to get a neat ssh shell is to 
 
  * Install github and 
  * put the github/bin in the PATH
 
+### Virtual Box
+The simplest of the Vagrant example is to provision the free Virtual Box with ubuntu linux machine. Hence we need the latest version of Virtual Box installed
 
 
 Vagrant Setup
