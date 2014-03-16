@@ -1,7 +1,7 @@
-Vagrant Getting Started
+Vagrant Recipes
 =======================
 
-This Vagrant Getting Started Guide
+This repository holds useful Vagrant Recipes.
 
 Prerequistes
 --------------
