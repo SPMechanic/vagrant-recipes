@@ -1,7 +1,10 @@
 Vagrant Recipes
 =======================
 
-This repository holds useful Vagrant Recipes.
+This repository holds useful Vagrant Recipes. 
+
+Installation
+==============
 
 Prerequistes
 --------------
@@ -15,22 +18,26 @@ Vagrant Setup
 ---------------
 
 Install Vagrant from http://vagrantup.com
-
-
-Proxy Setting for Vagrant downloads
-------------------------------------
-
-Vagrant needs to download following
-
- * Vagrant Boxes e.g http://files.vagrantup.com/precise32.box
- * Vagrant plugins e.g vagrant proxyconf or aws plugin
-
-If you are behind a corporate firewall and need to explicitly add proxy settings to your application, then 
-follow the instructions below to add proxy settings to Vagant
-
-Vagrant is based on Ruby, hence for providing Vagrant with information to work in a proxy environment,
 simply add HTTP_PROXY=http://<user>:<password>@<host>:<port> or HTTP_PROXY=http://<host>:<port>
 
 e.g HTTP_PROXY = http://np-proxy5:80
 
+
+Recipes
+=========
+
+1. Provisioning Virtual Box using Vagrant
+------------------------------------------
+
+[Recipe](https://github.com/rohitghatol/vagrant-recipies/tree/master/vagrant-virtualbox-simple) This Recipe describes the simplest case of setting up a Virtual Box using Vagrant
+
+
+2. Provisioning AWS EC2 using Vagrant
+---------------------------------------
+[Recipe](https://github.com/rohitghatol/vagrant-recipies/tree/master/vagrant-aws-provider) This Recipe describes the steps required to Provision Amazon AWS EC2 machine using Vagrant
+
+3. Provisioning Virtual Box behind Proxy using Vagrant
+-------------------------------------------------------
+
+[Recipe]https://github.com/rohitghatol/vagrant-recipies/tree/master/vagrant-virtualbox-proxy This Recipe describes the steps to make Vagrant working behind Proxy. It also describes how to make your Virtual Machines (e.g Virtual Boxes) work behind Proxy.
 
