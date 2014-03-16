@@ -1,6 +1,6 @@
 Vagrant Recipes
 =======================
-Vagrant is the new required tool for DevOps work, especially from the developer's side. A Developer would typically setup few Virtual Box on his/her machine, mimicing closely a production environment and then do development using the. The Developer would also share the Vagrantfile and underlyving provisioninig configuration e.g Puppet/Chef/Shell Scripts with the DevOps to share as a working document and software how the/she provisioned their machines.
+Vagrant is the new required tool for DevOps work, especially from the developer's side. A Developer would typically setup few Virtual Box on his/her machine, mimicing closely a production environment and then do development using them. The Developer would also share the Vagrantfile and underlyving provisioninig configuration e.g Puppet/Chef/Shell Scripts with the DevOps to share as a working document and software how the/she provisioned their machines.
 
 This way DevOps can replicate the same environment, further refine them and share it back with the dev team.
 
@@ -32,7 +32,7 @@ Install Vagrant from http://vagrantup.com . Add vagrant/bin to the PATH
 Recipes
 =========
 
-[1. Provisioning Virtual Box using Vagrant]
+1. Provisioning Virtual Box using Vagrant
 ------------------------------------------
 
 [See the Recipe](https://github.com/rohitghatol/vagrant-recipies/tree/master/vagrant-virtualbox-simple) 
