@@ -1,36 +1,55 @@
 Vagrant Recipes
 =======================
+Vagrant is the new required tool for DevOps work, especially from the developer's side. A Developer would typically setup few Virtual Box on his/her machine, mimicing closely a production environment and then do development using them. The Developer would also share the Vagrantfile and underlyving provisioninig configuration e.g Puppet/Chef/Shell Scripts with the DevOps to share as a working document and software how the/she provisioned their machines.
 
-This repository holds useful Vagrant Recipes.
+This way DevOps can replicate the same environment, further refine them and share it back with the dev team.
+
+
+
+
+Installation
+==============
 
 Prerequistes
 --------------
 
+### SSH - Only for Windows
 Vagrant would work out of box on Unix/Linux based system, but on windows it needs ssh shell.
-The simplest way to get a neat ssh shell is to install github and put the github/bin in the PATH
+The simplest way to get a neat ssh shell is to 
 
- * github
+ * Install github and 
+ * put the github/bin in the PATH
+
+### Virtual Box
+The simplest of the Vagrant example is to provision the free Virtual Box with ubuntu linux machine. Hence we need the latest version of Virtual Box installed
+
 
 Vagrant Setup
 ---------------
+Install Vagrant from http://vagrantup.com . Add vagrant/bin to the PATH
 
-Install Vagrant from http://vagrantup.com
+
+Recipes
+=========
+
+1. Provisioning Virtual Box using Vagrant
+------------------------------------------
+
+[See the Recipe](https://github.com/rohitghatol/vagrant-recipies/tree/master/vagrant-virtualbox-simple) 
+
+This Recipe describes the simplest case of setting up a Virtual Box using Vagrant
 
 
-Proxy Setting for Vagrant downloads
-------------------------------------
+2. Provisioning AWS EC2 using Vagrant
+---------------------------------------
+[See the Recipe](https://github.com/rohitghatol/vagrant-recipies/tree/master/vagrant-aws-provider) 
 
-Vagrant needs to download following
+This Recipe describes the steps required to Provision Amazon AWS EC2 machine using Vagrant
 
- * Vagrant Boxes e.g http://files.vagrantup.com/precise32.box
- * Vagrant plugins e.g vagrant proxyconf or aws plugin
+3. Provisioning Virtual Box behind Proxy using Vagrant
+-------------------------------------------------------
 
-If you are behind a corporate firewall and need to explicitly add proxy settings to your application, then 
-follow the instructions below to add proxy settings to Vagant
+[See the Recipe](https://github.com/rohitghatol/vagrant-recipies/tree/master/vagrant-virtualbox-proxy) 
 
-Vagrant is based on Ruby, hence for providing Vagrant with information to work in a proxy environment,
-simply add HTTP_PROXY=http://<user>:<password>@<host>:<port> or HTTP_PROXY=http://<host>:<port>
-
-e.g HTTP_PROXY = http://np-proxy5:80
-
+This Recipe describes the steps to make Vagrant working behind Proxy. It also describes how to make your Virtual Machines (e.g Virtual Boxes) work behind Proxy.
 

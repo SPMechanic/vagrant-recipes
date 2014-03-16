@@ -1,4 +1,4 @@
-Vagrant and Virtual Box setup using Proxy Server
+Vagrant and Virtual Box Proxy Settings
 ================================================
 
 Proxy Settings for Vagrant
@@ -23,8 +23,26 @@ Similar to Vagrant, even your Virtual Machines will need to connect to Internet 
 
 ### Step 1 Install Vagrant proxyconf plugin
 
+`$>vagrant plugin install vagrant-proxyconf`
 
 ### Step 2 Add global Vagant configuration
 
 
+To configure all possible software on all Vagrant VMs, add the following to _$HOME/.vagrant.d/Vagrantfile_ (or to a project specific _Vagrantfile_):
 
+```ruby
+Vagrant.configure("2") do |config|
+  if Vagrant.has_plugin?("vagrant-proxyconf")
+    config.proxy.http     = "http://192.168.0.2:3128/"
+    config.proxy.https    = "http://192.168.0.2:3128/"
+    config.proxy.no_proxy = "localhost,127.0.0.1,.example.com"
+  end
+  # ... other stuff
+end
+```
+
+
+
+References
+-----------
+ * https://github.com/tmatilai/vagrant-proxyconf
