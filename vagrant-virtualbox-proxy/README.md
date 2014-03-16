@@ -46,7 +46,3 @@ end
 References
 -----------
  * https://github.com/tmatilai/vagrant-proxyconf
- * 
-
-
-
