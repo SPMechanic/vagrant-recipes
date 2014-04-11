@@ -52,8 +52,8 @@ This Recipe describes the steps required to Provision Amazon AWS EC2 machine usi
 
 This Recipe describes the steps to make Vagrant working behind Proxy. It also describes how to make your Virtual Machines (e.g Virtual Boxes) work behind Proxy.
 
-4. Vagrant with Puppet -  Download Files for Installation if not locally provided
-----------------------------------------------------------
+### 4. Vagrant with Puppet -  Download Files for Installation if not locally provided
+
 [See the Recipe](https://github.com/rohitghatol/vagrant-recipies/tree/master/vagrant-puppet-download-if-local-copy-not-present/)
 
 
