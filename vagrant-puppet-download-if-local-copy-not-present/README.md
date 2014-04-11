@@ -64,6 +64,12 @@ Here is what we came up with
       command => "wget http://mirror.cc.columbia.edu/pub/software/apache/tomcat/tomcat-8/v8.0.5/bin/apache-tomcat-8.0.5.tar.gz",
       require => File["create /opt/tomcat"],
     }
+    
+    # Now subscribe to the file being present and start with rest of the flow
+    exec { "start tomcat":
+       command => "xxxx",
+       subscribe => File['/opt/tomcat/apache-tomcat-8.0.5.tar.gz'],
+    }
   }
 
 
