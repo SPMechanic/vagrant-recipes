@@ -39,39 +39,5 @@ Hybrid Scenario
 We can also think of a hybrid scenario which works the "Develper Machine Scenario" way if the apache-tomcat-8.0.5.tar.gz" file
 is present in files directory, and if not then it is downloaded from internet
 
-Here is what we came up with
 
-  class tomcat {
-  
-  require tomcat::params
-  
-    file {"create /opt/tomcat":
-      path=>"/opt/tomcat",
-      ensure => directory
-    }
-  
-    file {"copy apache-tomcat-8.0.5.tar.gz":
-      source => "puppet:///modules/tomcat/apache-tomcat-8.0.5.tar.gz",
-      path => "/opt/tomcat/apache-tomcat-8.0.5.tar.gz",
-      require => File["create /opt/tomcat"],
-      #before => Exec["download tomcat"]
-    }
-  
-    exec { "download tomcat":
-      unless => ["test -f /opt/tomcat/apache-tomcat-8.0.5.tar.gz"],
-      path=> "/usr/bin:/usr/sbin:/bin",
-      cwd => "/opt/tomcat",
-      command => "wget http://mirror.cc.columbia.edu/pub/software/apache/tomcat/tomcat-8/v8.0.5/bin/apache-tomcat-8.0.5.tar.gz",
-      require => File["create /opt/tomcat"],
-    }
-    
-    # Now subscribe to the file being present and start with rest of the flow
-    exec { "start tomcat":
-       command => "xxxx",
-       subscribe => File['/opt/tomcat/apache-tomcat-8.0.5.tar.gz'],
-    }
-  }
-
-
-
-
+TBD - Solution coming soon.......
